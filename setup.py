@@ -44,6 +44,7 @@ ext = Extension(
     language="c++",
     include_dirs=['fplib/include'] + INC_DIRS,
     libraries=["stdc++", "samplerate", "fftw3f"],
+    py_limited_api=True,
 )
 
 # If we don't have Cython, build from *.cpp instead of the Cython
